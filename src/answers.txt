@@ -29,7 +29,7 @@ when j >= length of y:
 
 ### Zero
 In the case where x and y are empty.
-i and j will be equal to one from the initiation.
+i and j will be equal to zero from the initiation.
 The length of x and y will be equal to zero.
 This will trigger the algorithm, when i >= length og x
 to append y[j:] to z.
