@@ -13,7 +13,7 @@ Algorithm:
 1) Initiation
 x has an index i that is set to zero at the begining of the algorithm.
 y has an index j that is set to zero at the begining of the algorithm.
-z is created as an empty sequence
+z is created as an empty sequence.
 
 2) Compare, Append, Return
 x[i] is compared with y[i]
@@ -31,55 +31,41 @@ when j >= length of y:
 In the case where x and y are empty.
 i and j will be equal to zero from the initiation.
 The length of x and y will be equal to zero.
-This will trigger the algorithm, when i >= length og x
-to append y[j:] to z.
+This will trigger the algorithm, when i >= length og x to append y[j:] to z.
 This will add an empty entry to z.
-When z is returned it will be empty,
-which is the equivalent of the x and y list.
+When z is returned it will be empty, which is the equivalent of the x and y list.
 
 In the case where x is empty, but y is not.
 The length of x will be equal to zero.
-This will trigger the algorithm, when i >= length og x
-to append y[j:] to z.
+This will trigger the algorithm, when i >= length og x to append y[j:] to z.
 This will add all y values to z.
-When z is returned it will contain values equivalent
-to the contents of x and y
+When z is returned it will contain values equivalent to the contents of x and y.
 
 ### One
 In the case where x and y contain one value each, where x[0] < y[0].
-i will be smaller than the length of x,
-and j will be smaller than the length of y.
-x[i] will be compared to y[j],
-x[i] will be smaller than y[i].
+i will be smaller than the length of x, and j will be smaller than the length of y.
+x[i] will be compared to y[j], x[i] will be smaller than y[i].
 x[i] will be appended to z, and i incremented by one.
-i is now equal to the length of x,
-so the y[j:] will be appended to z.
+i is now equal to the length of x, so the y[j:] will be appended to z.
 z is then returned.
 z contains all values of x and y in sorted order.
 
 In the case where x and y contain one value each, where x[0] >= y[0].
-i will be smaller than the length of x,
-and j will be smaller than the length of y.
-x[i] will be compared to y[j],
-x[i] will not be smaller than y[j].
+i will be smaller than the length of x, and j will be smaller than the length of y.
+x[i] will be compared to y[j], x[i] will not be smaller than y[j].
 y[j] will be appended to z, and j incremented by one.
-j is now equal to the length of y,
-so the x[i:] will be appended to z.
+j is now equal to the length of y, so the x[i:] will be appended to z.
 z is then returned.
 z contains all values of x and y in sorted order.
 
 ### Many
-i will be smaller than the length of x,
-and j will be smaller than the length of y.
-x[i] will be compared to y[j],
-The smallest value of x[i] or y[j] will be appended to z.
+i will be smaller than the length of x, and j will be smaller than the length of y.
+x[i] will be compared to y[j], the smallest value of x[i] or y[j] will be appended to z.
 j or i is incremented by one.
 Another set of x and y values will be compared.
 The smallest value will be added to z.
-This loop continues untill i = length of x
-or j = length of y.
-When that happens, values in the itteration!=length_of list
-will all be higher than the highest value in the itteration=length_of list.
+This loop continues untill i = length of x or j = length of y.
+When that happens, values in the itteration!=length_of list will all be higher than the highest value in the itteration=length_of list.
 The remaining values in the itteration!=length_of list will be appended to z.
 z will then contain all the values of x and y in sorted order.
 
