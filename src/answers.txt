@@ -6,7 +6,9 @@
 
 Problem: We have two sorted lists, x and y, and we wish to merge them into a sorted sequence, z.
 
-Solution: z contains all values of x and y in descending order
+Solution: z contains all values of x and y in descending order.
+
+Invariant: x[:i], y[:j], z = sorted(x[:i] + y[:j])
 
 Algorithm:
 
